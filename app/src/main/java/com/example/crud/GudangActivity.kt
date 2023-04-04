@@ -22,7 +22,7 @@ class GudangActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_gudang)
+        val navController = findNavController(R.id.nav_host_fragment_content_gudang2)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
@@ -33,7 +33,7 @@ class GudangActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_gudang)
+        val navController = findNavController(R.id.nav_host_fragment_content_gudang2)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
